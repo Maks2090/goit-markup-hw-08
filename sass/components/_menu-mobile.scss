@@ -1,0 +1,71 @@
+.mobile-bt {
+  
+  display: inline-flex;
+   
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
+
+  @media  screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+  
+.mobile-bt__close {
+  display: none;
+}
+  
+.mobile-bt.is-open .mobile-bt__close {
+  display: block;
+   
+}
+  
+.mobile-bt.is-open .mobile-bt__menu {
+  display: none;
+}
+  
+.menu-container {
+  
+  z-index: 2;
+  
+
+  @media  screen and (max-width: 767px) {
+    &.is-open {
+      display: block; }
+  }
+
+  
+
+  @media  screen and (max-width: 767px){
+    display: none;
+    position: absolute;
+    background-color: $white-color;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media  screen and (min-width: $tablet) {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 88px;
+    
+  }
+  
+  @media  screen and (min-width: $desktop) {
+    
+    margin-left: 93px;
+  }
+}
+  

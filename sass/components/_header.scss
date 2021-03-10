@@ -1,0 +1,22 @@
+.header{
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__container,
+.header__nav {
+  
+  
+  @media  screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

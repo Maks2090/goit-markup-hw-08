@@ -1,0 +1,86 @@
+
+.hero {
+  background-color: $black-bg;
+    
+  text-align: center;
+}
+  
+.hero__container {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/mhero480.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px 400px;
+  
+  
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/mhero960.jpg");
+    
+  }
+  @media  screen and (min-width: 768px) {
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/tablet1.jpg");
+    background-size: 768px;
+    
+    
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/tablet2x.jpg");}
+  }
+
+  @media  screen and (min-width: 1200px) {
+    background-size: 1600px 600px;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/background.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) , url("../img/desktop2x.jpg");}
+  }
+}
+
+.hero__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 118px;
+  
+  color: $white-color;
+  
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media  screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.615;
+    padding-top: 118px;
+  }
+  
+  @media  screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.4;
+    padding-top: 200px;
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  min-width: 200px;
+   
+  padding: 10px 32px;
+  margin-bottom: 118px;
+
+  @media  screen and (min-width: $tablet) {
+    margin-bottom: 118px;
+  }
+  
+  @media  screen and (min-width: $desktop) {
+    margin-bottom: 200px;
+  }
+}
